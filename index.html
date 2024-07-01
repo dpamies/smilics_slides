@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Smilics slides</title>
+		<meta name="description" content="Smilics OCPP slideshow">
+		<meta name="author" content="David Pamies-Estrems">
+		<link rel="stylesheet" href="dpe.css">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css"/>
+		<link rel="stylesheet" href="dist/theme/devrel.css" id="theme"/>
+		<link rel="stylesheet" href="dist/fontawesome/css/all.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/atom-one-dark.css" id="highlight-theme">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'dist/print/pdf.css' : 'dist/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+  </head>
+  <body>
+    <section id="tabzilla">
+      <a href="http://www.aneris.cat/">Aneris</a>
+    </section>
+
+    <div class="reveal">
+      <div class="slides">
+
+<!-------------------------------------------------------------------------------->
+<!-- COVER                                                                      -->
+<!-------------------------------------------------------------------------------->
+
+      <section>
+        <section>
+          <header>
+			  <hr>
+		      <h1>Integració OCPP</h1>
+			  <hr>
+			  <div style="margin-top:1em;">
+			    <h4>Reuni&oacute; inicial</h4>
+			 
+			  </div>	
+		      <p><strong>Aneris</strong><p>
+			 
+
+
+          </header>
+        </section>
+
+<!-------------------------------------------------------------------------------->
+<!-- INDEX                                                                      -->
+<!-------------------------------------------------------------------------------->
+
+        <section>
+          <ol>
+            <li><span>Presentacions</span></li>
+            <li><span>Una mica d'història</span></li>
+	    <li><span>El projecte</span>
+		<ul>
+			<li><span>Experiència associada</span></li>
+			<li><span>Tecnologia</span></li>
+			<li><span>Calendari</span></li>
+		</ul>		
+	    </li>
+	    <li><span>Altres consideracions</span></li>
+          </ol>
+        </section>
+        
+<!-------------------------------------------------------------------------------->
+<!-- PRESENTACIONS                                                              -->
+<!-------------------------------------------------------------------------------->
+          <section>
+            <h2>Presentacions</h2>
+          </section>
+          
+<!-------------------------------------------------------------------------------->
+
+      <section>
+        <h3>Qui soc?</h3>
+	        <strong>David P&agrave;mies</strong><br>
+		<strong>CTO a Aneris</strong><br>
+		<small>&nbsp;</small>
+	    <div class="container">
+			<div class="colbig align-left">
+				<ul>
+					<li><span>Més de 20 anys en el sector TIC</span></li>
+					<li><span>Enginyer informàtic</span></li>
+					<li><span>MBA</span></li>
+					<li><span>Doctor en informàtica i matemàtiques</span></li>
+					<li><span>Professor de seguretat i ci&egrave;ncia de dades</span></li>
+				</ul><br>
+			</div>
+			<div class="col">
+				<img class="plain" width="60%" src="img/intro/profile.png"/>		
+			</div>
+	    </div>
+
+	    <aside class="notes">
+	    </aside>
+      </section>
+      </section>
+<!-------------------------------------------------------------------------------->
+<!-- HISTORY                                                                    -->
+<!-------------------------------------------------------------------------------->
+      <section>
+          <section>
+            <h2>Una mica d'història</h2>
+          </section>
+          
+<!-------------------------------------------------------------------------------->
+
+      <section>
+        <h3>Una mica d'història (I)</h3>
+	    <div class="container">
+		<ul>
+		<li>Repsol<span> - Distribució de gas a Espanya</span></li>
+		<li>Dow Chemical<span> - Sistemes de sensors virtuals</span></li>
+		<li>Port Aventura<span> - Previsió de visitants i aprovisionaments</span></li>
+		<li>Bombers<span> - Simulació d'incendis</span></li>
+		<li>Johnson Controls<span> - Optimització de consums energètics</span></li>
+		<li>Gencat<span> - Cercador de les administracions públiques</span></li>
+		<li>Comissió Europea<span> - Reducció de riscos químics</span></li>
+		<li>Xarxa Santa Tecla<span> - Sistema d'Informació Hospitalari</span></li>
+		</ul><br>
+	    </div>
+
+	    <aside class="notes">
+	    </aside>
+      </section>
+      
+<!-------------------------------------------------------------------------------->
+
+      <section>
+        <h3>Una mica d'història (II)</h3>
+	    <div class="container">
+		<ul>
+		<li>Diputació de Tarragona<span> - Sistema de planificació i BI</span></li>
+		<li>URV<span> - Gestió d'incidents de seguretat</span></li>
+		<li>Fundació .CAT<span> - Auditoria de seguretat</span></li>
+		<li>Port de València<span> - Gestió de la terminal de contenidors</span></li>
+		<li>Port de Tarragona<span> - Gestió integral de la logística</span></li>
+		<li><span>Producte per a la gestió d'ISOs/EFQMs</span></li>
+		<li><span>Consultoria en ciberseguretat, TIC i IOT</span></li>
+		</ul><br>
+	    </div>
+
+	    <aside class="notes">
+	    </aside>
+      </section>
+    </section>
+<!-------------------------------------------------------------------------------->
+<!-- PROJECTE                                                                   -->
+<!-------------------------------------------------------------------------------->
+    <section>
+          <section>
+            <h2>El projecte</h2>
+          </section>
+          
+<!-------------------------------------------------------------------------------->
+
+      <section>
+        <h3>Experiència associada</h3>
+	    <div class="container">
+		<ul>
+		<li>Place to Plug
+		<ul>
+			<li><span>Repsol, InnoEnergy, Nissan, Porsche</span></li>
+			<li><span>Desenvolupament plataforma gestió punts de càrrega</span></li>
+		</ul>
+		</li>
+		<li>Estabanell
+		<ul>
+			<li><span>Integració amb Circutor, Simon</span></li>
+			<li><span>OCPP 1.5, OCPP 1.6</span></li>
+		</ul>
+		</li>
+		<li>Projectes Next Generation
+		<ul>
+		<li><span>Desplegament de 5G en entorns rurals</span></li>
+		<li><span>Seguretat fibra òptica província Tarragona</span></li>
+		</ul>
+		</li>
+		</ul><br>
+	    </div>
+
+	    <aside class="notes">
+	    </aside>
+      </section>
+
+<!-------------------------------------------------------------------------------->
+
+      <section>
+	    <h3>Tecnologia</h3>
+	    <blockquote>Linux, dins contenidors Docker</blockquote>
+	    <small>Per facilitar-ne el desplegament</small>
+
+	    <blockquote>Entorns Java / Go</blockquote>
+	    <small>Implementant API rest o webservices, per a la integració</small>
+	    
+	    <blockquote>Protocol OCPP autogestionat</blockquote>
+	    <img class="plain" src="img/conclusions/machine.svg" width="30%">
+	    
+            <aside class="notes">
+            </aside>
+      </section>  
+       
+<!-------------------------------------------------------------------------------->
+
+      <section>
+	    <h3>Calendari</h3>
+	    <small>Per al desenvolupament</small><br/>
+	    <blockquote>Juliol - Agost</blockquote>
+
+	    <img class="plain" src="img/calendar.svg" width="30%">
+
+	    <blockquote>A partir de Setembre</blockquote>
+	    <small>Manteniment</small><br/>
+	    
+	    
+            <aside class="notes">
+            </aside>
+      </section>  
+<!-------------------------------------------------------------------------------->
+    </section>
+
+<!-------------------------------------------------------------------------------->
+<!-- CONCLUSIONS                                                                -->
+<!-------------------------------------------------------------------------------->
+    <section>
+      <section>
+      	<h2>Altres consideracions</h2>
+      </section>
+
+<!-------------------------------------------------------------------------------->
+	  <section>
+	    <h3>Integració</h3>		
+		<blockquote>Integració de nous punts és un factor clau</blockquote>
+		<small>Una vegada desenvolupat</small>
+
+		<blockquote>Integracions internes o amb tercers</blockquote>
+		<small>Cal explorar-ne la viabilitat?</small>
+
+		<blockquote>Plataformes de facturaci&oacute;</blockquote>
+		<small>S'hauràn d'utilitzar?</small>
+
+	    <aside class="notes">
+	    </aside>
+	  </section>
+
+<!-------------------------------------------------------------------------------->
+	  <section>
+	    <h3>Requisits</h3>
+		<blockquote>
+			Definir inicialment tots els requisits
+			<img class="plain" style="vertical-align:middle" src="img/conclusions/check.png" width="40px">
+		</blockquote>
+
+		<blockquote>
+			Definir un contacte centralitzat
+			<img class="plain" style="vertical-align:middle" src="img/conclusions/check.png" width="40px"> 
+		</blockquote>
+
+		<blockquote>
+			Alineació de tot l'equip
+			<img class="plain" style="vertical-align:middle" src="img/conclusions/check.png" width="40px">
+		</blockquote>
+		
+	    <aside class="notes">
+	    </aside>
+	  </section>
+
+<!-------------------------------------------------------------------------------->
+<!-- THANKS                                                                     -->
+<!-------------------------------------------------------------------------------->
+
+	  <section>
+	      <h2>Moltes gràcies!</h2>
+	      <img class="plain" src="img/conclusions/future3.png"/>
+	  </section>
+	</section>
+
+<!--------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------->
+<!-- END OF SLIDES                                                                                                         -->
+<!--------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------->
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/math/math.js"></script>
+	<script src="plugin/customcontrols/customcontrols.js"></script>
+	<script src="plugin/anything/anything.js"></script>
+    <script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				controls: false,
+				customcontrols: {
+					slideNumberCSS : 'position: fixed; display: block; right: 90px; top: auto; left: auto; width: 50px; bottom: 10px; z-index: 31; font-family: Helvetica, sans-serif; font-size:  12px; line-height: 1; padding: 5px; text-align: center; border-radius: 10px; background-color: rgba(128,128,128,.5);',
+					controls: [ 
+						{ icon: '<i class="fa fa-caret-left"></i>', css: 'position: fixed; right: 60px; bottom: 10px; z-index: 30; font-size: 24px;', action: 'Reveal.prev(); return false;' }, 
+						{ icon: '<i class="fa fa-caret-right"></i>', css: 'position: fixed; right: 30px; bottom: 10px; z-index: 30; font-size: 24px;', action: 'Reveal.next(); return false;' }, 
+					]
+				},
+				slideNumber: 'h.v',
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath, RevealZoom]
+			});
+		</script>
+	</body>
+</html>
